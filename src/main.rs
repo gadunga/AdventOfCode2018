@@ -1,5 +1,6 @@
 extern crate hamming;
 extern crate regex;
+extern crate chrono;
 
 use std::error::Error;
 use std::env;
@@ -10,6 +11,7 @@ use std::path::Path;
 mod d1;
 mod d2;
 mod d3;
+mod d4;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -34,5 +36,5 @@ fn main() {
         Ok(_) => (),
     }
 
-    d3::solve(&s)
+    d4::solve(&s)
 }

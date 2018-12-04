@@ -1,7 +1,7 @@
 use std::collections::HashSet;
-
 use regex::Regex;
 
+#[allow(dead_code)]
 pub fn solve(data: &str) {
     let re = Regex::new(r"\#(\d+) @ (\d+),(\d+): (\d+)x(\d+)").unwrap();
     let mut cloth = vec![vec![Vec::<usize>::new(); 1024]; 1024];

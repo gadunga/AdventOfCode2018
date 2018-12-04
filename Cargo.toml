@@ -6,3 +6,4 @@ authors = ["richard"]
 [dependencies]
 hamming = "0.1"
 regex = "1"
+chrono = "*"
